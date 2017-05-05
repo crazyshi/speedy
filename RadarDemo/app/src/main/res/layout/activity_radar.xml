@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_radar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="退 出"
+            />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="10s"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ivWave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wave"/>
+
+    <!-- 雷达扫描线默认隐藏-->
+    <ImageView
+        android:id="@+id/ivRadarScan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/light_beam"/>
+
+    <ImageView
+        android:id="@+id/ivCirle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/while_circle"/>
+
+    <FrameLayout
+        android:id="@+id/match_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</FrameLayout>

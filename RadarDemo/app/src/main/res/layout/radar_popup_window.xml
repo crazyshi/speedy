@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_radar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    >
+
+    <ImageView
+        android:id="@+id/ivCirle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/while_circle"/>
+
+
+    <ImageView
+        android:id="@+id/ivWave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wave"/>
+
+    <!-- 雷达扫描线默认隐藏-->
+    <ImageView
+        android:id="@+id/ivRadarScan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/light_beam"/>
+
+    <FrameLayout
+        android:id="@+id/match_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RadarDemo</string>
+    <string name="android_journey">Android 之旅</string>
+    <string name="scan_result">扫描到的好友</string>
+</resources>
